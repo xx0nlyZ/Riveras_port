@@ -1,0 +1,292 @@
+body {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(34, 34, 34, 0.7)), url('grenninja.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #FFFFFF; /* White text color */
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    transition: background 1s ease-in-out;
+}
+
+header {
+    padding-top: 25px;
+    transition: padding 0.5s ease;
+}
+
+#logo {
+    position: fixed;
+    top: 2%;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition-duration: 2.0s;
+    padding: 10px;
+}
+
+#logo:hover {
+    border-radius: 50%;
+    transform: rotateZ(360deg);
+    box-shadow: 0 0 10px rgba(182, 6, 100, 0.9);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#logo img {
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+#logo img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    #logo img {
+        max-width: 80px;
+    }
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    gap: 20px;
+    transition: gap 0.3s ease-in-out;
+}
+
+.navbar a {
+    color: #FFFFFF; /* White text for navbar links */
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: 0.3s;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background: #8affbb;
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.9);
+    transform: scale(1.05);
+    color: #fff;
+    border-radius: 10px;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.home {
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px rgba(0, 255, 85, 0.7);
+    margin: 10px 0;
+    color: #FFFFFF; /* White text color for the home section */
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .home {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+.home h2 {
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px rgba(0, 255, 85, 0.7);
+    margin: 10px 0;
+    color: #fafcf2; /* Light green text */
+    transition: transform 0.3s ease-in-out;
+}
+
+.home h2:hover {
+    transform: scale(1.1);
+}
+
+.about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+    color: #FFFFFF; /* White text for about section */
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.profiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.profile-card {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease-in-out;
+}
+
+.profile-card:hover {
+    border-color: #0aff99;
+    box-shadow: 0 0 20px rgba(0, 255, 85, 0.8);
+}
+
+.profile-card img {
+    width: 200px;
+    height: 220px;
+    border-radius: 50%;
+    border: 2px dashed #FFD700; /* Golden dashed border to keep the ninja aesthetic */
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-card img:hover {
+    transform: scale(1.1);
+}
+
+.more-info {
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed #FFD700; /* Dashed golden border for the info section */
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.profile-card:hover .more-info {
+    display: block;
+    opacity: 1;
+}
+
+#contact {
+    text-align: center;
+    padding: 20px;
+    color: #FFFFFF; /* White text for contact section */
+    background-color: #00000099;
+    border-radius: 10px;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #FFFFFF; /* White text for contact heading */
+}
+
+.contact-card, .blog-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 25px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+.contact-card:hover, .blog-card:hover {
+    border-color: #0aff99;
+    box-shadow: 0 0 20px rgba(0, 255, 85, 0.8);
+    transform: translateY(-5px);
+}
+}
+#blog {
+    text-align: center;
+    padding: 20px;
+    color: #FFFFFF; /* White text for contact section */
+    background-color: #00000099;
+    border-radius: 10px;
+}
+
+#blog h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #FFFFFF; /* White text for contact heading */
+}
+
+.blog-card {
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px auto;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 255, 85, 0.9);
+}
+.contact-info {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.contact-map {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #FFD700;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.fa:hover {
+    background: #FF8AF5;
+    color: #fff;
+}
+footer nav{
+  height: 100px;
+}
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+@media (max-width: 768px) {
+    footer {
+        font-size: 15px;
+    }
+}
+iframe {
+    width: 100%; 
+    height: 400px;
+    border: none; 
+    border-radius: 10px;
+  }
+
+ 
+  @media (max-width: 768px) {
+    iframe {
+      height: 250px; 
+    }
+  }
